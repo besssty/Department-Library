@@ -1,0 +1,32 @@
+.wrapper {
+	@apply flex gap-5 font-semibold;
+
+	.item {
+		@apply rounded-lg bg-white p-5 shadow-md shadow-aqua;
+
+		transform: translateX(-100%);
+		opacity: 0;
+		animation: slideInLeft 1s forwards;
+
+		> div {
+			&:first-child {
+				@apply mb-2;
+			}
+
+			&:last-child {
+				@apply text-2xl font-semibold;
+			}
+		}
+	}
+}
+
+@keyframes slideInLeft {
+	from {
+		transform: translateX(-100%);
+		opacity: 0;
+	}
+	to {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}

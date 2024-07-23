@@ -1,0 +1,7 @@
+.actions {
+	@apply flex justify-end;
+
+	> button {
+		@apply ml-4 text-primary;
+	}
+}

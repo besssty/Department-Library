@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+	@apply scroll-smooth;
+}
+
+main {
+	@apply xl:ml-8 pb-0  rounded-tl-lg;
+}
+
+body::-webkit-scrollbar {
+	width: 12px; /* ширина всей полосы прокрутки */
+}
+
+body::-webkit-scrollbar-track {
+	-webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+	background: white; /* цвет зоны отслеживания */
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: rgb(164, 164, 164); /* цвет бегунка */
+}
+
+div::-webkit-scrollbar {
+	width: 12px; /* ширина всей полосы прокрутки */
+}
+
+div::-webkit-scrollbar-track {
+	background: rgb(216, 216, 216); /* цвет зоны отслеживания */
+}
+
+div::-webkit-scrollbar-thumb {
+	background-color: rgb(114, 114, 114); /* цвет бегунка */
+}
+
+body {
+	@apply bg-bg-color text-base text-black overflow-x-hidden h-auto;
+	font-family: var(--font-monts), sans-serif;
+	background: rgb(228, 226, 255);
+	background: radial-gradient(
+		circle,
+		rgba(228, 226, 255, 1) 0%,
+		rgba(228, 240, 255, 1) 57%,
+		rgba(216, 255, 235, 1) 100%
+	);
+}
+
+img {
+	max-width: none;
+}
+
+.layout {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	flex: 1 1 0%;
+	padding: 0px 24px;
+	margin: 0px auto;
+	margin-top: 16px;
+	max-width: 1600px;
+	width: 100%;
+}
+
+.disabled {
+	pointer-events: none;
+	cursor: default;
+	text-decoration: none;
+	opacity: 0.2 !important;
+}
+
+.open-menu {
+	opacity: 1;
+	transform: scale(1);
+}
+
+.close-menu {
+	pointer-events: none;
+	opacity: 0;
+	transform: scale(0.8);
+}
+
+.hideMenuNav {
+	display: none;
+}
+.showMenuNav {
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-left: 24px;
+	margin-right: 24px;
+	background: #fff;
+	z-index: 10;
+	border-radius: 24px;
+}
