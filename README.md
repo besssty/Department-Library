@@ -1,40 +1,38 @@
-# Description
-A project to help automate business processes in a university department
+# $${\color{lightblue}Stack}$$ 
+### Frontend
+Next JS - The React Framework - [see documentation](https://nextjs.org/docs) </br>
+React - JavaScript library - [see documentation](https://react.dev/learn) </br>
+Redux - JavaScript library - [see documentation](https://redux.js.org/introduction/getting-started)
 
-# Stack
-## Frontend
-### Next - The React Framework - [see documentation](https://nextjs.org/docs)
-### React - JavaScript library - [see documentation](https://react.dev/learn)
-### Redux - JavaScript library - [see documentation](https://redux.js.org/introduction/getting-started)
+### Backend
+Prisma ORM - [see documentation](https://www.prisma.io/docs/getting-started) </br>
+Nest JS - Node.js framework - [see documentation](https://docs.nestjs.com/)
 
-## Backend
-### Prisma ORM - [see documentation](https://www.prisma.io/docs/getting-started)
-### Nest - Node.js framework - [see documentation](https://docs.nestjs.com/)
+### Main program language
+TypeScript - Open-source high-level programming language - [see documentation](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html)
 
-## Main program language
-### TypeScript - Open-source high-level programming language - [see documentation](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html)
-
-# Installation
+# $${\color{lightblue}Installation}$$
 ```
 $ npm install
 ```
 
-# Database
-#### Change the data for your server in the .env files first
+# $${\color{lightblue}Database}$$
+> [!IMPORTANT]
+> Change the data for your server in the .env files first
 
-#### Then synchronize your Prisma schema with your database schema
+#### Then synchronize your Prisma schema with your database schema:
 ```
 $ prisma db push
 ```
 
-# Running the app
-Frontend
+# $${\color{lightblue}Running \space the \space app}$$
+### Frontend
 ```
 # development
 $ yarn dev
 ```
 
-Backend
+### Backend
 ```
 # development
 $ nest start
