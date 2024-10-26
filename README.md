@@ -1,3 +1,16 @@
+# $${\color{lightblue}Functionality}$$ 
+### General:
+- Browse books
+- Sort books
+- Search books
+- Authentication
+
+### Local:
+- View user profile
+- View site statistics
+- Editing, adding and deleting books
+- Editing, adding and deleting common terms
+
 # $${\color{lightblue}Stack}$$ 
 ### Frontend
 Next JS - The React Framework - [see documentation](https://nextjs.org/docs) </br>
